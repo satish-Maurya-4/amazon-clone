@@ -2,7 +2,7 @@ import React from 'react'
 import { useStateValue } from './StateProvider'
 
 const CheckoutProduct = ({ id, title, image, price, rating}) => {
-    const [dispatch] = useStateValue();
+    const [{ basket }, dispatch] = useStateValue();
     const removeFromBasket = ()=>{
         // remove item from basket....
         dispatch({

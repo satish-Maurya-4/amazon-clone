@@ -27,7 +27,7 @@ const App = () => {
     return () => {
       unsubscribe();
     }
-  })
+  }, [])
 
   console.log("user is null", user);
 
